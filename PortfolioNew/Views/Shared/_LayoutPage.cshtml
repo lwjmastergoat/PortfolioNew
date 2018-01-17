@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/main.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Lasse Wormark Portfolio">
+    <meta name="keywords" content="HTML,CSS,C#,JavaScript,Lasse Wormark, Portfolio">
+    <meta name="author" content="Lasse Wormark">
+
+</head>
+<body>
+
+
+    <div class="parallax container-fluid" id="top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-md">
+            <a class="navbar-brand" href="/Home/Index"> <img class="lwlogo img-fluid" src="~/Content/Images/logo2.png" alt="lw media logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link navfont text-uppercase" href="#top">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navfont text-uppercase" href="#one">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navfont text-uppercase" href="#two">Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navfont text-uppercase" href="#three">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navfont text-uppercase" href="#four">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="text-center headerh1">Lasse Wormark</h1>
+                <img class="img-fluid halfruler d-block mx-auto" src="~/Content/Images/Shape 1.png" alt="half ruler" />
+                <h5 class="text-center headerh5">Frontend & Backend Developer</h5>
+                <a href="#one"><img class="d-block mx-auto headerarrow" src="~/Content/Images/down copy.png" alt="downarrow" /></a>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    
+</body>
+</html>

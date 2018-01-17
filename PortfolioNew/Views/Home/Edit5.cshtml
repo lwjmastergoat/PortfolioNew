@@ -1,0 +1,16 @@
+﻿@using Repository;
+@model UserInformationTable
+
+
+@{
+    ViewBag.Title = "Edit5";
+    Layout = "~/Views/Shared/_detailspage.cshtml";
+}
+
+<form method="post" action="/Home/Edit5/">
+    <label for="UserInformation"> Lav Skift</label>
+    <input type="text" id="UserInformation" name="UserInformation" value="@Model.UserInformation" />
+    <br />
+    <button class="btn btn-default" type="submit">Opdater</button>
+    <input type="hidden" value="@Model.ID" name="ID" />
+</form>

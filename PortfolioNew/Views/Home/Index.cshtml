@@ -1,0 +1,181 @@
+﻿@using Repository;
+@model MainOptions
+
+@{
+    ViewBag.Title = "Lasse Wormark";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<div class="container" id="one">
+    <div class="row">
+        <div class="col-sm-12 col-lg-6 aboutmargintop" id="">
+            <h2 class="abouth2" id="myDiv1"></h2>
+            <p class="aboutp1" id="myDiv"></p>
+        </div>
+        <div class="col-sm-12 col-lg-6 aboutmargintop">
+
+            @*<img src="~/Content/Images/Layer 1.png" class="img-fluid mx-auto d-block myimage"/>*@
+        </div>
+        <div class="col-sm-4  aboutmargintop2 bjmargin">
+            <img class="d-block mx-auto pmarginbottom" src="~/Content/Images/user.png" alt="user png"/>
+            <hr>
+            <ul class="text-center" id="myUl"></ul>
+        </div>
+        <div class="col-sm-4 aboutmargintop2 bjmargin">
+            <img class="d-block mx-auto pmarginbottom" src="~/Content/Images/magic-wand.png" alt="graphics png"/>
+            <hr>
+            <ul class="text-center" id="myUl2"></ul>
+        </div>
+        <div class="col-sm-4 aboutmargintop2 bjmargin">
+            <img class="d-block mx-auto pmarginbottom" src="~/Content/Images/edit-1.png" alt="coding png"/>
+            <hr>
+            <ul class="text-center" id="myUl3"></ul>
+
+        </div>
+    </div>
+</div>
+
+<section class="no-padding" id="portfolio">
+    <div class="container-fluid aboutmargintop5" id="two">
+        <div class="row no-gutter popup-gallery">
+            <div class="col-sm-12" id="">
+                <h2 class="text-center abouth2 paddingtop"> My Works</h2>
+                <hr>
+            </div>
+            <div class="col-sm-12 pmarginbottom2" id="">
+                <h2 class="text-center"> This is only some of my works.</h2>
+            </div>
+            @foreach (PortfolioTable main in Model.Portfolio)
+            {
+                <div class="col-lg-4 col-sm-12 col-md-12">
+                    <a href="/Home/Details/@main.ID" class="portfolio-box">
+                        <img src="@main.PortFolioImage" class="img-responsive" alt="portfolio image">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Click for more
+                                </div>
+                                <div class="project-name">
+                                    @main.PortfolioSmallDesc
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<div class="container-fluid aboutmargintop5" id="three">
+    <div class="row">
+        <div class="col-sm-12 cvsection">
+            <h2 class="text-center abouth3">Qualifications</h2>
+            <h4 class="text-center cvh4">Click below to access my CV</h4>
+            <a href="@Model.MainTables.UserCV" target="_blank"><button class="d-block mx-auto cvstylebtn"> Click Here </button></a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="four">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="text-center aboutmargintop2">Let's Get In Touch!</h2>
+            <hr>
+            <p class="text-center">Ready to start your next project with me? That's great! send me an email and i'll get back to you as soon as possible!</p>
+            <form class="text-center" action="/Home/SendMail/" method="post">
+                <input type="text" name="Subject" placeholder="Name" />
+                <input type="text" placeholder="Email" />
+                <br />
+                <textarea name="BodyText" placeholder="Message"></textarea>
+                <button name="submit" type="submit" class="d-block mx-auto cvstylebtn2">Submit</button>
+            </form>
+            @ViewBag.MSG
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid footercolor">
+    <div class="row">
+        <div class="col-sm-3 aboutmargintop4">
+            <p> &copy; LasseWormark.dk</p>
+           
+        </div>
+        <div class="col-sm-9 text-lg-right aboutmargintop3">
+            <a target="_blank" href="https://www.instagram.com/lassewormark/"><img class="socialimg text-right img-fluid" src="~/Content/Images/instagram.png" alt="instagram icon"/></a>
+            <a target="_blank" href="https://www.linkedin.com/in/lasse-wormark-bba6b8141/"><img class="socialimg text-right img-fluid" src="~/Content/Images/linkedin.png" alt="linkedin icon"/></a>
+            <a target="_blank" href="https://www.facebook.com/lassewjorgensen"><img class="socialimg text-right img-fluid" src="~/Content/Images/facebook.png" alt="facebook icon"/></a>
+
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="~/Content/js/jquery-3.2.1.min (3).js"></script>
+<script src="~/Content/js/bootstrap.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $.ajax({
+            type: 'GET',
+            url: '/Home/GetAllJoin/',
+            success: function (MainOptions) {
+                $("#myDiv").html(MainOptions.MainTables.AboutInformation);
+                $("#myDiv1").html(MainOptions.MainTables.AboutTitle);
+                $(MainOptions.UserCoding).each(function () {
+                    $(document.createElement("li"))
+                        .text(this.UserCodings)
+                        .appendTo("#myUl3")
+                })
+                $(MainOptions.UserGraphics).each(function () {
+                    $(document.createElement("li"))
+                        .text(this.UserGraphics)
+                    .appendTo("#myUl2")
+                })
+                $(MainOptions.UserInformation).each(function () {
+                    $(document.createElement("li")).text(this.UserInformation)
+                    .appendTo("#myUl")
+                })
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+    // Select all links with hashes
+    $('a[href*="#"]')
+      // Remove links that don't actually link to anything
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function (event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+            &&
+            location.hostname == this.hostname
+          ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              // Does a scroll target exist?
+              if (target.length) {
+                  // Only prevent default if animation is actually gonna happen
+                  event.preventDefault();
+                  $('html, body').animate({
+                      scrollTop: target.offset().top
+                  }, 1000, function () {
+                      // Callback after animation
+                      // Must change focus!
+                      var $target = $(target);
+                      $target.focus();
+                      if ($target.is(":focus")) { // Checking if the target was focused
+                          return false;
+                      } else {
+                          $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                          $target.focus(); // Set focus again
+                      };
+                  });
+              }
+          }
+      });
+</script>

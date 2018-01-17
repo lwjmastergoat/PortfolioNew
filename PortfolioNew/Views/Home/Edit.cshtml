@@ -1,0 +1,34 @@
+﻿@using Repository;
+@model PortfolioTable
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_detailspage.cshtml";
+}
+
+<form action="/Home/Edit/" method="post">
+    <h3>Rediger Small Description Herunder</h3>
+    <input type="text" name="PortfolioSmallDesc" value="@Model.PortfolioSmallDesc" />
+    <br />
+    <h3>Rediger Indhold Herunder</h3>
+    <textarea name="PortfolioDesc">@Model.PortfolioDesc</textarea>
+    <br />
+    <h3>Rediger Billed Herunder</h3>
+    <input type="text" name="PortFolioImage" value="@Model.PortFolioImage" />
+    <br />
+    <h3>Rediger Titel Herunder</h3>
+    <input type="text" name="PortFolioTitel" value="@Model.PortFolioTitle" />
+    <br />
+    <h3>Rediger DemoLink Herunder</h3>
+    <input type="text" name="DemoLink" value="@Model.DemoLink" />
+    <br />
+
+
+    <button class="btn btn-default margintop center-block" type="submit">Rediger</button>
+    <input type="hidden" value="@Model.ID" name="ID" />
+</form>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="~/Content/js/bootstrap.js"></script>
+<script src="~/Content/js/bootstrap.min.js"></script>

@@ -1,0 +1,29 @@
+﻿@using Repository;
+@model MainTable
+@{
+    ViewBag.Title = "Edit2";
+    Layout = "~/Views/Shared/_detailspage.cshtml";
+}
+
+<form action="/Home/Edit2/" method="post">
+    <h3>Rediger Small Description Herunder</h3>
+    <input type="text" name="AboutTitle" value="@Model.AboutTitle" />
+    <br />
+    <h3>Rediger information Herunder</h3>
+    <textarea name="AboutInformation">@Model.AboutInformation</textarea>
+    <br />
+    <h3>Rediger UserCV Herunder</h3>
+    <input type="text" name="UserCV" value="@Model.UserCV" />
+    <br />
+
+
+
+    <button class="btn btn-default margintop center-block" type="submit">Rediger</button>
+    <input type="hidden" value="@Model.ID" name="ID" />
+</form>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="~/Content/js/bootstrap.js"></script>
+<script src="~/Content/js/bootstrap.min.js"></script>

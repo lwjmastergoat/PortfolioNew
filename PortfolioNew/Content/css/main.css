@@ -1,0 +1,482 @@
+﻿body {
+    font-family: 'Exo';
+    /*background-color: #fdf8d8;*/
+    background-image: url('../Images/blablablablablablablablabla.jpg');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+
+.details1 {
+    height: 439px;
+    background-color: rgba(253, 248, 216, 0.20);
+}
+
+.details2 {
+    height: 439px;
+    background-color: rgba(218, 210, 161, 0.20);
+}
+
+.details3 {
+    height: 439px;
+    background-color: rgba(184, 174, 110, 0.20);
+}
+
+.details4 {
+    height: 439px;
+    background-color: rgba(233, 228, 192, 0.20);
+}
+
+.imagedetails {
+    width: 970px;
+    height: 439px;
+}
+
+.smalldescdetails {
+    margin-top: 170px;
+}
+
+.titledetailsmargin {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.cvstylebtn3 {
+    padding: 40px 100px;
+    border: 2px solid rgba(0, 0, 0, 0.20);
+    background-color: rgba(0, 0, 0, 0.00);
+    margin-top: 130px;
+    color: #5c5c5c;
+    font-size: 70px;
+}
+
+.newspaper {
+    column-count: 2;
+    column-gap: 25px;
+    font-size: 20px;
+}
+/* HEADER */
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.lwlogo {
+    height: 70px;
+    opacity: 0.7;
+    padding-left: 40px;
+}
+
+.navfont {
+    font-size: 20px;
+}
+
+.bg-light {
+    background-color: rgba(0, 0, 0, 0.00) !important;
+}
+
+.halfruler {
+    width: 350px;
+    margin-bottom: 13px;
+}
+
+.headerh1 {
+    font-size: 65px;
+    font-weight: 600;
+    /*margin-top: 320px;*/
+    margin-top: 300px;
+    letter-spacing: 5px;
+}
+
+.headerh5 {
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+nav-link {
+    color: black !important;
+}
+
+.headerarrow {
+    margin-top: 250px;
+}
+/* HEADER END */
+
+
+.paddingtop {
+    padding-top: 50px;
+}
+
+/* CONTENT */
+
+p {
+    letter-spacing: 1px;
+}
+
+.aboutmargintop {
+    margin-top: 130px;
+}
+
+li {
+    font-size: 18px;
+}
+
+.aboutmargintop2 {
+    margin-top: 50px;
+}
+
+.abouth2 {
+    font-size: 65px;
+    font-weight: 600;
+    color: #5c5c5c;
+}
+
+h2 {
+    font-family: 'Exo', sans-serif !important;
+}
+
+.aboutp1 {
+    text-align: left;
+    font-size: 20px;
+    /*margin-left: 300px;*/
+}
+
+.pmarginbottom {
+    margin-bottom: 45px;
+}
+
+.pmarginleft {
+    margin-left: 30px;
+}
+
+.pmarginbottom2 {
+    margin-bottom: 105px;
+}
+
+.cvsection {
+    background-color: black;
+    color: white;
+    height: 333px;
+}
+
+.cvstylebtn {
+    padding: 15px 50px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.00);
+    color: white;
+}
+
+
+.abouth3 {
+    margin-top: 60px;
+    font-size: 65px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.cvh4 {
+    margin-bottom: 30px;
+    color: #5c5c5c;
+}
+
+.works {
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.00) !important;
+    padding: 15px 10px;
+    width: 600px;
+    margin-top: 90px;
+    /*margin-right: 100px;*/
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+textarea {
+    background-color: rgba(0, 0, 0, 0.00) !important;
+    max-width: 65%;
+    width: 100%;
+    margin-top: 90px;
+    /*margin-right: 100px;*/
+    border: none;
+    border-bottom: 2px solid black;
+    padding-left: 10px;
+}
+
+
+.footercolor {
+    background-color: black;
+    color: white;
+    margin-top: 150px;
+    height: 105px;
+}
+
+.cvstylebtn2 {
+    padding: 15px 50px;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.00);
+    margin-top: 35px;
+    color: black;
+}
+
+.socialimg {
+    height: 48px;
+    width: 48px;
+    margin-right: 10px;
+}
+
+.aboutmargintop3 {
+    margin-top: 30px;
+}
+
+.aboutmargintop4 {
+    margin-top: 45px;
+}
+/* CONTENT END */
+
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 360px;
+    margin-left: 9px;
+}
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.aboutmargintop5 {
+    margin-top: 170px;
+}
+
+
+.myimage {
+    height: 340px;
+    opacity: 0.6;
+}
+
+@media only screen and (max-width: 768px) {
+    .headerarrow {
+    margin-top: 100px;
+}
+
+
+    .socialimg {
+        width: 24px;
+        height: 24px;
+        text-align: right;
+    }
+
+    .aboutmargintop3 {
+        margin-top: 0;
+    }
+
+    .footercolor {
+        height: 130px;
+    }
+
+    .abouth3 {
+        font-size: 40px;
+    }
+
+    .headerh1 {
+        margin-top: 100px;
+    }
+
+    .aboutmargintop2 {
+        margin-top: 50px;
+    }
+
+    .aboutmargintop5 {
+        margin-top: 0;
+    }
+
+    .bjmargin {
+        margin-bottom: 30px;
+    }
+
+    .aboutmargintop {
+        margin-top: 50px;
+    }
+
+    .paddingtop {
+        padding-top: 150px;
+    }
+
+    input {
+    background-color: rgba(0, 0, 0, 0.00) !important;
+    padding: 15px 10px;
+    width: 310px;
+    margin-top:90px;
+    /*margin-right: 100px;*/
+    border: none;
+    border-bottom: 2px solid black;
+    
+}
+    .imagedetails {
+    width: 970px;
+    margin-top: 70px;
+    height: 300px;
+}
+
+    .cvstylebtn3 {
+    padding: 40px 100px;
+    border: 2px solid rgba(0, 0, 0, 0.20);
+    background-color: rgba(0, 0, 0, 0.00);
+    margin-top: 70px;
+    color: #5c5c5c;
+    font-size: 40px;
+}
+}
+
+
+
+/* PARALLAX */
+
+.parallax {
+    /* The image used */
+    background-image: url('../Images/background.jpg');
+    /* Set a specific height */
+    height: 1000px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+
+/* PARALLAX END */
+
+.service-box {
+    max-width: 400px;
+    margin: 50px auto 0;
+}
+
+@media (min-width: 992px) {
+    .service-box {
+        margin: 20px auto 0;
+    }
+}
+
+.service-box p {
+    margin-bottom: 0;
+}
+
+.portfolio-box {
+    position: relative;
+    display: block;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+hr {
+    border-color: rgba(215, 80, 36, 0.65);
+    border-width: 3px;
+    max-width: 50px;
+}
+
+.portfolio-box .portfolio-box-caption {
+    color: white;
+    opacity: 0;
+    display: block;
+    background: rgba(215, 80, 36, 0.89);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+        .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+        .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+            padding: 0 15px;
+        }
+
+        .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+            font-size: 18px;
+        }
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+.portfolio-box:focus {
+    outline: none;
+}
+
+@media (min-width: 768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+    }
+
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px;
+    }
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
